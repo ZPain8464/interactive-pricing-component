@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+    <main class="attribution">
+      <section class="pricing">
+        <div class="pricing-section-1">
+          <div class="pricing-section">
+            <p id="pageviews">100K PAGEVIEWS</p>
+          </div>
+          <div class="pricing-section">
+            <p><span id="dollar-amount">$16.00</span> /month</p>
+          </div>
+        </div>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slide-bar"
+            id="myRange"
+            onchange="setPageViews()"
+          />
+        </div>
+      </section>
+      <section class="billing">
+        <div class="billing-section">
+          <p>
+            Monthly Billing
+
+            <label class="switch">
+              <input id="toggle" type="checkbox" onchange="checkToggle()" />
+              <span class="slider round"></span>
+            </label>
+          </p>
+        </div>
+        <div class="billing-section">
+          <p>Yearly Billing <span id="discount">25% discount</span></p>
+        </div>
+      </section>
+      <section class="trial">
+        <div class="trial-section">
+          <ul>
+            <li>
+              <p><span>&#10003;</span> Unlimited websites</p>
+            </li>
+            <li>
+              <p><span>&#10003;</span> 100% data ownership</p>
+            </li>
+            <li>
+              <p><span>&#10003;</span> Email reports</p>
+            </li>
+          </ul>
+        </div>
+        <div class="trial-section">
+          <button>Start my trial</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="js/functions.js"></script>
+  </body>
+</html>
