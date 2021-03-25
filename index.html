@@ -30,13 +30,11 @@
     </header>
     <main class="attribution">
       <section class="pricing">
-        <div class="pricing-section-1">
-          <div class="pricing-section">
-            <p id="pageviews">100K PAGEVIEWS</p>
-          </div>
-          <div class="pricing-section">
-            <p><span id="dollar-amount">$16.00</span> /month</p>
-          </div>
+        <div class="pageviews-section">
+          <p id="pageviews">100K PAGEVIEWS</p>
+        </div>
+        <div class="pricing-section">
+          <p><span id="dollar-amount">$16.00</span> /month</p>
         </div>
         <div class="slidecontainer">
           <input
@@ -46,9 +44,10 @@
             value="50"
             class="slide-bar"
             id="myRange"
-            onchange="setPageViews()"
+            onchange="calculateRange()"
           />
         </div>
+        </section>
       </section>
       <section class="billing">
         <div class="billing-section">
@@ -62,20 +61,20 @@
           </p>
         </div>
         <div class="billing-section">
-          <p>Yearly Billing <span id="discount">25% discount</span></p>
+          <p>Yearly Billing <span id="discount" class="full-text">25% discount</span><span class="short-text">-25%</span></p>
         </div>
       </section>
       <section class="trial">
         <div class="trial-section">
           <ul>
             <li>
-              <p><span>&#10003;</span> Unlimited websites</p>
+              <p><span class="checkmark">&#10003;</span> Unlimited websites</p>
             </li>
             <li>
-              <p><span>&#10003;</span> 100% data ownership</p>
+              <p><span class="checkmark">&#10003;</span> 100% data ownership</p>
             </li>
             <li>
-              <p><span>&#10003;</span> Email reports</p>
+              <p><span class="checkmark">&#10003;</span> Email reports</p>
             </li>
           </ul>
         </div>
@@ -89,7 +88,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Zachary Painter</a>.
     </div>
     <script src="js/functions.js"></script>
   </body>

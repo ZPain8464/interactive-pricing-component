@@ -1,15 +1,12 @@
 function checkToggle() {
   const element = document.getElementById("toggle");
   element.classList.toggle("active");
-
-  // account for user hitting toggle multiple times on same price point
-  // if active, do math and git discounted total
-  // if else / back to inactive, render original amount
+  calculateRange();
 }
 
 // sets pageviews based on scale value; passes value into
 // getDiscount() to calculate pricing
-function setPageViews() {
+function calculateRange() {
   const r = document.getElementById("myRange");
   const currentVal = r.value;
   if (currentVal <= 17) {
@@ -50,6 +47,7 @@ function setPageViews() {
   }
 }
 
+// Passes in amount and calculates discount
 function getDiscount(amount) {
   const element = document.getElementById("toggle");
   if (element.classList.contains("active")) {
