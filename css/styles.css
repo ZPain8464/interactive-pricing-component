@@ -343,3 +343,10 @@ button {
     width: 14px;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1223px) {
+  .pricing-section,
+  .pageviews-section {
+    padding: 30px;
+  }
+}

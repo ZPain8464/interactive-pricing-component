@@ -53,13 +53,13 @@ function getDiscount(amount) {
   if (element.classList.contains("active")) {
     const amountToSubtract = amount / 4;
     const disAmount = amount - amountToSubtract;
-    const renderAmount = "$" + disAmount.toString() + `.00`;
+    const renderAmount = "$" + disAmount.toString() + ".00";
     const adjPricing = (document.getElementById(
       "dollar-amount"
     ).innerHTML = renderAmount);
     return adjPricing;
   } else {
-    const renderAmount = "$" + amount.toString() + `.00`;
+    const renderAmount = "$" + amount.toString() + ".00";
     const adjPricing = (document.getElementById(
       "dollar-amount"
     ).innerHTML = renderAmount);
