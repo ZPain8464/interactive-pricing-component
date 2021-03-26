@@ -5,7 +5,6 @@
 
 body {
   text-align: center;
-  /* background-color: rgb(238 244 254); */
   background-image: linear-gradient(#eef4fe, #fff);
   background-repeat: no-repeat;
 }
@@ -87,10 +86,9 @@ span#dollar-amount {
 input[type="range"] {
   -webkit-appearance: none;
   height: 7px;
-
-  background-color: #b1f8e0f2;
-
   border-radius: 8px;
+  overflow: hidden;
+  background-color: #eef4fe;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
@@ -105,6 +103,10 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   background: #23a27ab5;
   cursor: pointer;
+  box-shadow: -35px 0 0 #b1f8e0f2, -70px 0 0 #b1f8e0f2, -105px 0 0 #b1f8e0f2,
+    -140px 0 0 #b1f8e0f2, -175px 0 0 #b1f8e0f2, -210px 0 0 #b1f8e0f2,
+    -245px 0 0 #b1f8e0f2, -280px 0 0 #b1f8e0f2, -315px 0 0 #b1f8e0f2,
+    -350px 0 0 #b1f8e0f2, -385px 0 0 #b1f8e0f2, -420px 0 0 #b1f8e0f2;
 }
 
 /* Billing */
